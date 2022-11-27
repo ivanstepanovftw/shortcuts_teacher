@@ -1,6 +1,7 @@
 # Shortcuts Teacher
 
-
+This is a simple tool to help you learn keyboard shortcuts. It's a work in progress, but it's already useful.
+![](/screenshots/img.png)
 
 ## License
 
