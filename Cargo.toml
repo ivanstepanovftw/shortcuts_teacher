@@ -1,0 +1,11 @@
+[package]
+name = "shortcuts_teacher"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+notify-rust = "4"  # Notifications
+device_query = "1.1.1"  # Mouse & Keyboard input
+arboard = "3.2.0"  # Clipboard
