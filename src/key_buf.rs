@@ -1,9 +1,8 @@
 use std::ops::{Deref, DerefMut};
-use device_query::Keycode;
+use crate::key::MyKey;
 use crate::prelude::*;
 
-
-pub struct KeyBuf(pub Vec<Keycode>);
+pub struct KeyBuf(pub Vec<MyKey>);
 
 impl KeyBuf {
     pub fn new() -> Self {
@@ -12,7 +11,7 @@ impl KeyBuf {
 }
 
 impl Deref for KeyBuf {
-    type Target = Vec<Keycode>;
+    type Target = Vec<MyKey>;
 
     fn deref(&self) -> &Self::Target {
         &self.0

@@ -6,11 +6,11 @@ use std::rc::Rc;
 use std::sync::{Arc, Mutex};
 use std::time::Instant;
 use notify_rust::Notification;
-use device_query::{DeviceQuery, DeviceEvents, DeviceState, Keycode};
+use crate::key::MyKey;
 use crate::prelude::*;
 
 
-pub struct KeyLog(Vec<(Keycode, Instant)>);
+pub struct KeyLog(Vec<(MyKey, Instant)>);
 
 impl KeyLog {
     pub fn new() -> Self {
@@ -19,7 +19,7 @@ impl KeyLog {
 }
 
 impl Deref for KeyLog {
-    type Target = Vec<(Keycode, Instant)>;
+    type Target = Vec<(MyKey, Instant)>;
 
     fn deref(&self) -> &Self::Target {
         &self.0
