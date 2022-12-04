@@ -1,9 +1,9 @@
 use std::fmt;
-use std::ops::{Deref, DerefMut};
+use std::ops::{Deref};
 use crate::key::MyKey;
 
 
-#[derive(PartialEq)]
+#[derive(Debug, PartialEq)]
 pub struct Shortcut(pub Vec<MyKey>);
 
 impl Shortcut {
